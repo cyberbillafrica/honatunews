@@ -124,6 +124,22 @@
                     <div class="input-group-append">
                         <button class="input-group-text bg-primary text-dark border-0 px-3"><i
                                 class="fa fa-search"></i></button>
+
+    <div style="position: relative; white-space: nowrap; overflow: hidden; animation: moveRight 5s linear infinite;">
+        Text that moves from left to right
+    </div>
+
+    <style>
+        @keyframes moveRight {
+            0% {
+                left: -100%; /* Start position off the left side */
+            }
+            100% {
+                left: 100%; /* End position off the right side */
+            }
+        }
+    </style>
+			    
 			    <marquee>Your clipboard now supports images as well as text</marquee>
                     </div>
                 </div>
