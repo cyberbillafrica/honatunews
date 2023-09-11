@@ -133,15 +133,10 @@
 
 
     <!-- Main News Slider Start -->
-    <marquee direction="left" scrollamount="3">
-        Text that scrolls from left to right, you get? 
-</marquee>
-			    
-    
+  
    <marquee>
-	   <h4 class=" text-secondary"> <h4><a style="color: blue;"> God is Good to me</a></h4>
-<i>Your clipboard now supports images as well as text</i></h4>
-   </marquee>
+	   <h4 class=" text-secondary"> <h4><a style="color: blue;"> God is Good to me<i>Your clipboard now supports images as well as text</i></h4></a></h4>
+  </marquee>
 
 	
 	<div class="container-fluid">
@@ -186,47 +181,49 @@
                 </div>
             </div>
 
-
-		<div style="position: relative; white-space: nowrap; overflow: hidden; animation: moveRight 5s linear infinite;"> Text that moves from left to right
-    </div>
-
     <style>
-        @keyframes moveRight {
+        /* Style for the scrolling text */
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scrollText 10s linear infinite;
+        }
+
+        /* Style for the "Breaking News" text */
+        .breaking-news {
+            position: absolute;
+            top: 10px; /* Adjust the vertical position as needed */
+            left: -100%; /* Start off the left side of the viewport */
+            animation: slideBreakingNews 10s linear infinite;
+        }
+
+        @keyframes scrollText {
             0% {
-                left: -100%; /* Start position off the left side */
+                transform: translateX(100%); /* Start off the right side of the viewport */
             }
             100% {
-                left: 100%; /* End position off the right side */
+                transform: translateX(-100%); /* End off the left side of the viewport */
+            }
+        }
+
+        @keyframes slideBreakingNews {
+            0% {
+                left: -100%; /* Start off the left side of the viewport */
+            }
+            100% {
+                left: 100%; /* End off the right side of the viewport */
             }
         }
     </style>
 
-
-    <style>
-        /* Style for the container that holds the scrolling text */
-        .scrolling-container {
-            height: 200px; /* Adjust the height as needed */
-            overflow: auto;
-            border: 1px solid #ccc; /* Optional border for clarity */
-        }
-
-        /* Style for the static "Breaking News" text at the bottom */
-        .breaking-news {
-            text-align: left;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-    </style>
-    <!-- Your scrolling text content goes here within a scrolling container -->
-    <div class="scrolling-container">
-        <p>This is some scrolling text. You can add more content here.</p>
-        <!-- Add more content as needed -->
+    <!-- Scrolling text -->
+    <div class="scrolling-text">
+        This is your scrolling text content. Add more text here for scrolling.
     </div>
 
-    <!-- Static "Breaking News" text at the bottom -->
+    <!-- "Breaking News" text -->
     <div class="breaking-news">
-        Breaking News:
+        Breaking News: Important Update!
     </div>
 		
             <div class="col-lg-5 px-0">
