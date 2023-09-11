@@ -23,6 +23,41 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+<style>
+	 /*Style for the scrolling text */
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scrollText 10s linear infinite;
+        }
+
+        /* Style for the "Breaking News" text */
+        .breaking-news {
+            position: absolute;
+            top: 10px; /* Adjust the vertical position as needed */
+            left: -100%; /* Start off the left side of the viewport */
+            animation: slideBreakingNews 10s linear infinite;
+        }
+
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%); /* Start off the right side of the viewport */
+            }
+            100% {
+                transform: translateX(-100%); /* End off the left side of the viewport */
+            }
+        }
+
+        @keyframes slideBreakingNews {
+            0% {
+                left: -100%; /* Start off the left side of the viewport */
+            }
+            100% {
+                left: 100%; /* End off the right side of the viewport */
+            }
+        }
+</style>
 </head>
 
 <body>
@@ -181,40 +216,6 @@
                 </div>
             </div>
 
-    <style>
-        /* Style for the scrolling text */
-        .scrolling-text {
-            white-space: nowrap;
-            overflow: hidden;
-            animation: scrollText 10s linear infinite;
-        }
-
-        /* Style for the "Breaking News" text */
-        .breaking-news {
-            position: absolute;
-            top: 10px; /* Adjust the vertical position as needed */
-            left: -100%; /* Start off the left side of the viewport */
-            animation: slideBreakingNews 10s linear infinite;
-        }
-
-        @keyframes scrollText {
-            0% {
-                transform: translateX(100%); /* Start off the right side of the viewport */
-            }
-            100% {
-                transform: translateX(-100%); /* End off the left side of the viewport */
-            }
-        }
-
-        @keyframes slideBreakingNews {
-            0% {
-                left: -100%; /* Start off the left side of the viewport */
-            }
-            100% {
-                left: 100%; /* End off the right side of the viewport */
-            }
-        }
-    </style>
 
     <!-- Scrolling text -->
     <div class="scrolling-text">
