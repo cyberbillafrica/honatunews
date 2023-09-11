@@ -24,40 +24,6 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-<style>
-	 /*Style for the scrolling text */
-        .scrolling-text {
-            white-space: nowrap;
-            overflow: hidden;
-            animation: scrollText 10s linear infinite;
-        }
-
-        /* Style for the "Breaking News" text */
-        .breaking-news {
-            position: absolute;
-            top: 10px; /* Adjust the vertical position as needed */
-            left: -100%; /* Start off the left side of the viewport */
-            animation: slideBreakingNews 10s linear infinite;
-        }
-
-        @keyframes scrollText {
-            0% {
-                transform: translateX(100%); /* Start off the right side of the viewport */
-            }
-            100% {
-                transform: translateX(-100%); /* End off the left side of the viewport */
-            }
-        }
-
-        @keyframes slideBreakingNews {
-            0% {
-                left: -100%; /* Start off the left side of the viewport */
-            }
-            100% {
-                left: 100%; /* End off the right side of the viewport */
-            }
-        }
-</style>
 </head>
 
 <body>
@@ -187,7 +153,8 @@
 
 	
    <marquee>
-	   <h4 class=" text-secondary"> <h4><a style="color: blue;"> God is Good to me<i>Your clipboard now supports images as well as text</i></h4></a></h4>
+	  <div class="bg-primary text-dark text-center font-weight-medium py-2" style="width: 170px;">Breaking News</div>
+         <h4 class=" text-secondary"> <h4><a style="color: blue;"> God is Good to me<i>Your clipboard now supports images as well as text</i></h4></a></h4>
   </marquee>
 
 	
@@ -234,16 +201,6 @@
             </div>
 
 
-    <!-- Scrolling text -->
-    <div class="scrolling-text">
-        This is your scrolling text content. Add more text here for scrolling.
-    </div>
-
-    <!-- "Breaking News" text -->
-    <div class="breaking-news">
-        Breaking News: Important Update!
-    </div>
-		
             <div class="col-lg-5 px-0">
                 <div class="row mx-0">
                     <div class="col-md-6 px-0">
