@@ -6094,7 +6094,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #FFCC00 !important;
+  background-color: #FF0000 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9501,7 +9501,7 @@ h6,
   position: fixed;
   display: none;
   right: 30px;
-  bottom: 30px;
+  bottom: 40px;
   z-index: 99;
 }
 
