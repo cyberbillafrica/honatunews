@@ -9500,8 +9500,8 @@ h6,
 .back-to-top {
   position: fixed;
   display: none;
-  right: 30px;
-  bottom: 40px;
+  left: 30px;
+  bottom: 30px;
   z-index: 99;
 }
 
